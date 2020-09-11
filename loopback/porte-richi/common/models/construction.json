@@ -1,0 +1,48 @@
+{
+  "name": "construction",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bladeThickness": {
+      "type": "number",
+      "required": true
+    },
+    "sheetMetalThickness": {
+      "type": "string",
+      "required": true
+    },
+    "boxMetalThickness": {
+      "type": "number",
+      "required": true
+    },
+    "sealingContours": {
+      "type": "number",
+      "required": true
+    },
+    "clothInsulation": {
+      "type": "string",
+      "required": true
+    },
+    "boxInsulation": {
+      "type": "string",
+      "required": true
+    },
+    "sealant": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hallDoor": {
+      "type": "belongsTo",
+      "model": "hallDoor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

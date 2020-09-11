@@ -1,0 +1,254 @@
+<body>
+<header class="title">
+  <div class="title__address-descr">
+    <p class="title__subscr">адрес салона</p>
+    <p class="title__address">пр-т Дзержинского, 122</p>
+    <div class="title__exit" (click)="exitFromApp()">
+      <p>выход</p>
+      <img [src]="smallArrow" alt="small arrow">
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="title__name">
+    <h1 class="title__name__descr">Форма ценника для входной двери</h1>
+  </div>
+
+  <div class="common-description"  >
+    <ul class="common-description__title">
+      <li class="name-of-forms">Название</li>
+      <li class="name-of-forms">Назначение</li>
+      <li class="name-of-forms">Комплектация</li>
+      <li class="name-of-forms">Указатель</li>
+    </ul>
+    <ul class="common-description__forms">
+      <li>
+        <label [formGroup]="doorsData">
+          <input type="text" formControlName="name">
+        </label>
+      </li>
+      <li>
+        <form [formGroup]="doorsData" >
+          <label>
+            <input  type="radio" name="type" value="living" formControlName="type" (change)="changeAppointment($event)">
+            <span>для квартиры</span>
+          </label>
+          <label>
+            <input type="radio" name="type" value="hall" formControlName="type" (change)="changeAppointment($event)">
+            <span>для дома</span>
+          </label>
+        </form>
+      </li>
+      <li>
+        <form [formGroup]="doorsData">
+          <label>
+            <input type="radio" value="basic" name="equipment" formControlName="equipment">
+            <span>базовая</span>
+          </label>
+          <label>
+            <input type="radio" value="middle" name="equipment" formControlName="equipment">
+            <span>средняя</span>
+          </label>
+          <label>
+            <input type="radio" value="max" name="equipment" formControlName="equipment">
+            <span>максимальная</span>
+          </label>
+        </form>
+      </li>
+      <li>
+        <div class="common-description__indicator-images">
+          <img [src]="leftArrow" alt="arrow">
+          <img [src]="door" alt="door">
+          <img [src]="rightArrow" alt="arrow">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="trim" >
+    <p class="forms-title">Отделка</p>
+    <div [formGroup]="doorsData">
+      <ul class="trim__title">
+        <li class="name-of-forms">Снаружи</li>
+        <li class="name-of-forms">Внутри</li>
+        <li class="name-of-forms">Окраска коробки</li>
+      </ul>
+      <ul class="trim__form" >
+        <li>
+          <label formGroupName="trims">
+            <input class="trim__form-outside" type="text" formControlName="outside">
+          </label>
+        </li>
+        <li>
+          <label formGroupName="trims">
+            <input type="text" formControlName="inside">
+          </label>
+        </li>
+        <li>
+          <label formGroupName="trims">
+            <input class="trim__form-coloring" type="text" formControlName="boxColoring">
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="construction">
+    <p class="forms-title">Конструкция</p>
+    <div>
+      <ul class="construction__titles">
+        <li class="name-of-forms">Толщина полотна</li>
+        <li class="name-of-forms">Толщина металла полотна</li>
+        <li class="name-of-forms">Толщина металла коробки</li>
+        <li class="name-of-forms">Контуры уплотнения</li>
+        <li class="name-of-forms">Утеплитель полотна</li>
+        <li class="name-of-forms">Утеплитель коробки</li>
+        <li class="name-of-forms">Уплотнитель</li>
+      </ul>
+      <ul class="construction__forms" [formGroup]="doorsData">
+        <li>
+          <label formGroupName="constructions">
+            <input type="text" class="construction__charachteristic__input" formControlName="bladeThickness">
+            <span>мм</span>
+          </label>
+        </li>
+        <li>
+          <label formGroupName="constructions">
+            <input type="text"
+                   class="construction__charachteristic__input" formControlName="sheetMetalThickness">
+            <span>мм</span>
+          </label>
+        </li>
+        <li>
+          <label formGroupName="constructions">
+            <input type="text"
+                   class="construction__charachteristic__input" formControlName="boxMetalThickness">
+            <span>мм</span>
+          </label>
+        </li>
+        <li>
+          <label formGroupName="constructions">
+            <input type="text"
+                   class="construction__charachteristic__input" formControlName="sealingContours">
+            <span>мм</span>
+          </label>
+        </li>
+        <li>
+          <label formGroupName="constructions">
+            <select formControlName="clothInsulation">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </label>
+        </li>
+        <li>
+          <label formGroupName="constructions">
+            <select formControlName="boxInsulation">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </label>
+        </li>
+        <li>
+          <label formGroupName="constructions">
+            <select formControlName="sealant">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sign-for-adding">
+      <img [src]="addingSign" alt="add">
+    </div>
+  </div>
+
+  <div class="furniture-and-locks">
+    <p class="forms-title">Замки и фурнитура</p>
+    <div [formGroup]="doorsData">
+      <ul class="furniture-and-locks__title" >
+        <li class="name-of-forms">Верхний замок</li>
+        <li class="name-of-forms">Нижний замок</li>
+        <li class="name-of-forms">Накладка</li>
+        <li class="name-of-forms">Броненакладка</li>
+        <li class="name-of-forms">Ручка</li>
+      </ul>
+      <ul class="furniture-and-locks__forms">
+        <li>
+          <label formGroupName="furniture">
+            <input type="text" formControlName="upperLock">
+          </label>
+        </li>
+        <li>
+          <label formGroupName="furniture">
+            <input type="text" formControlName="downLock">
+          </label>
+        </li>
+        <li>
+          <label formGroupName="furniture">
+            <input type="text" formControlName="patch">
+          </label>
+        </li>
+        <li>
+          <label formGroupName="furniture">
+            <input type="text" formControlName="armorPatch">
+          </label>
+        </li>
+        <li>
+          <label formGroupName="furniture">
+            <input type="text" formControlName="handle">
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="sign-for-adding">
+      <img [src]="addingSign" alt="add">
+    </div>
+  </div>
+
+  <div class="price">
+    <p class="forms-title">Цена и стоимость</p>
+    <div class="price__content">
+      <ul class="price__content__title">
+        <li class="name-of-forms">Цена</li>
+        <li >
+          <label class="price__content__title-check">
+            <input type="checkbox" value="sale" [checked]="isChecked">
+          </label>
+          <span class="name-of-forms">со скидкой</span>
+        </li>
+      </ul>
+      <ul class="price__content__form">
+        <li [formGroup]="doorsData">
+          <label>
+            <input type="text" formControlName="price">
+            <span class="name-of-forms">р.</span>
+          </label>
+        </li>
+        <li [formGroup]="doorsData">
+          <label class="price__with-sale__cost">
+            <input type="text" formControlName="priceWithDiscount" >
+            <span class="name-of-forms price__with-sale__cost-text ">р.</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="price__without-delivery">
+      <label>
+        <input type="checkbox">
+        <p>стоимость двери без учёта доставки и монтажа</p>
+      </label>
+    </div>
+    <div class="create-file">
+      <button type="submit" (click)="onSubmit()">Создать файл для печати</button>
+    </div>
+  </div>
+</div>
+<footer></footer>
+</body>

@@ -1,0 +1,40 @@
+{
+  "name": "furniture",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "upperLock": {
+      "type": "string",
+      "required": true
+    },
+    "downLock": {
+      "type": "string",
+      "required": true
+    },
+    "patch": {
+      "type": "string",
+      "required": true
+    },
+    "armorPatch": {
+      "type": "string",
+      "required": true
+    },
+    "handle": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hallDoor": {
+      "type": "belongsTo",
+      "model": "hallDoor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,133 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.registration__form-wrapper {
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__form-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.registration__form-header-logo {
+  margin-bottom: 10px;
+}
+
+.registration__form-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__form-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.registration__form-input {
+  padding: 10px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 45px;
+  width: 245px;
+  outline: none;
+  &:focus, &:hover {
+    border: 1px solid #C7A477;
+  }
+}
+
+.registration__form-input-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  outline: none;
+}
+
+.registration__form-input-select__active-arrow {
+  display: none;
+}
+.registration__form-input-select__active-arrow.expanded {
+  display: block;
+}
+.registration__form-input-select__default-arrow.expanded{
+  display: none;
+}
+
+
+.registration__form-input-select img{
+  position: absolute;
+  outline: none;
+}
+
+.registration__form-input-select img:hover{
+  cursor: pointer;
+}
+.registration__form-input-select input {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 45px;
+  width: 245px;
+  cursor: pointer;
+  outline: none;
+  &:focus, &:hover {
+    border: 1px solid #C7A477;
+  }
+}
+
+.registration__form-input-select__options {
+  top: 45px;
+  transition: all 1s;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 2;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.registration__form-input-select__options.expanded {
+  display: flex;
+}
+
+.registration__form-input-select__options span {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.registration__form-input-select__options span:hover {
+  background: #EEEEEE;
+}
+
+.registration__form-submit-button {
+  cursor: pointer;
+  font-family: RFTone-Bold;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #9D9DA1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #CBA576;
+  padding: 15px 75px;
+  &:hover {
+    transform: translateY(-1px);
+  }
+}

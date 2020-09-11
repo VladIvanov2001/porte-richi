@@ -1,0 +1,78 @@
+<div class="container">
+  <header class="header">
+    <p>Для квартиры</p>
+    <img [src]="arrow" alt="arrow" (click)="exitFromApp()">
+  </header>
+  <div class="main">
+    <div class="title">
+      <h1>{{order.name}}</h1>
+      <p>{{order.equipment}}</p>
+    </div>
+    <hr>
+    <div class="trim" *ngFor="let trim of order.trims">
+      <h2>Отделка</h2>
+      <p>Внутри: {{trim.inside}}</p>
+      <p>Снаружи: {{trim.outside}}</p>
+      <p>Окраска коробки: {{trim.boxColoring}}</p>
+    </div>
+    <hr>
+    <div class="construction">
+      <h2>Конструкция</h2>
+      <div class="construction__lists" *ngFor="let construction of order.constructions">
+        <ul>
+          <li>Толщина полотна</li>
+          <li>Толщина металла полотна</li>
+          <li>Толщина металла коробки</li>
+          <li>Контуры уплотнения</li>
+          <li>Утеплитель полотна</li>
+          <li>Утеплитель коробки</li>
+          <li>Уплотнитель</li>
+        </ul>
+        <ul>
+          <li>{{construction.bladeThickness}}</li>
+          <li>{{construction.sheetMetalThickness}}</li>
+          <li>{{construction.boxMetalThickness}}</li>
+          <li>{{construction.bladeThickness}}</li>
+          <li>{{construction.clothInsulation}}</li>
+          <li>{{construction.boxInsulation}}</li>
+          <li>{{construction.sealant}}</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="furniture">
+      <h2>Замки и фурнитура</h2>
+      <div class="furniture__list" *ngFor="let furniture of order.furniture">
+        <ul>
+          <li>Верхний замок</li>
+          <li>Нижний замок</li>
+          <li>Накладка</li>
+          <li>Броненакладка</li>
+          <li>Ручка</li>
+        </ul>
+        <ul>
+          <li>{{furniture.upperLock}}</li>
+          <li>{{furniture.downLock}}</li>
+          <li>{{furniture.patch}}</li>
+          <li>{{furniture.armorPatch}}</li>
+          <li>{{furniture.handle}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="price">
+      <div class="price__inscription">
+        <p class="price__inscription__without-discount">{{order.price}} р.</p>
+        <p class="price__inscription__with-discount" *ngIf="order.priceWithDiscount">{{order.priceWithDiscount}} р.</p>
+      </div>
+      <p class="price__annotation">стоимость двери без учёта доставки и монтажа</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="maker">
+      <p>Согласно СТБ 2433-2015<br>Производитель: Республика Беларусь<br>ООО «Дверной сезон» УНП 790823530</p>
+    </div>
+    <div class="delivery-install">
+      <p>Доставка и установка:</p>
+    </div>
+  </footer>
+</div>

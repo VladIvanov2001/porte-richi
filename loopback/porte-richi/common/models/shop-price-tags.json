@@ -1,0 +1,24 @@
+{
+  "name": "ShopPriceTags",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "hallDoor": {
+      "type": "belongsTo",
+      "model": "hallDoor",
+      "foreignKey": ""
+    },
+    "rightShop": {
+      "type": "belongsTo",
+      "model": "rightShop",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

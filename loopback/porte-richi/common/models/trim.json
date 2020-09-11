@@ -1,0 +1,32 @@
+{
+  "name": "trim",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "outside": {
+      "type": "string",
+      "required": true
+    },
+    "inside": {
+      "type": "string",
+      "required": true
+    },
+    "boxColoring": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hallDoor": {
+      "type": "belongsTo",
+      "model": "hallDoor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

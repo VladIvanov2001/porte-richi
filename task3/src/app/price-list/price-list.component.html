@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="title">
+    <p class="title__name">Ценники Porte Richi</p>
+    <div class="title__btns">
+      <label></label>
+      <button (click)="onHallDoor()">Входная</button>
+      <button (click)="onLivingDoor()">Межкомнатная</button>
+    </div>
+    <div class="title__info">
+      <p class="title__info__subscr">адрес салона</p>
+      <p class="title__info__address">{{address}}</p>
+      <div class="title__exit" (click)="exitFromApp()">
+        <p>выход</p>
+        <img [src]="smallArrow" alt="small arrow">
+      </div>
+    </div>
+  </div>
+  <div class="search">
+    <img [src]="iconSearch" alt="search">
+    <label>
+      <input type="text" class="search__input" placeholder="Поиск">
+    </label>
+    <p class="search__add">+Добавить</p>
+  </div>
+  <div class="list-of-products">
+    <uL>
+      <li *ngFor="let door of doors" (click)="addOrder(door)">{{door.name}}</li>
+    </uL>
+  </div>
+</div>

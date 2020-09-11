@@ -1,0 +1,36 @@
+{
+  "name": "rightShop",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hallDoors": {
+      "type": "hasMany",
+      "model": "hallDoor",
+      "foreignKey": "",
+      "through": "ShopPriceTags"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "*"
+    }
+  ],
+  "methods": {}
+}

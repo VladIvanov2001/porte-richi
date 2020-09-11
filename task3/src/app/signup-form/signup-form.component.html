@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="signup-form.component.scss">
+</head>
+<body>
+<div class="registration__form-wrapper">
+  <div class="registration__form-header">
+    <img class="registration__form-header-logo" [src]="logoSrc" [alt]="logoAlt">
+    <img [src]="logoName" [alt]="logoNameAlt">
+  </div>
+  <div class="registration__form-body">
+    <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+      <div class="registration__form-input-group">
+        <div class="registration__form-input-label">
+          <span>Выберите адрес салона</span>
+        </div>
+        <div class="registration__form-input-select">
+          <input name="username" autocomplete="off" readonly  formControlName="name" (focus)="onSelectFocus()" (blur)="onSelectBlur()">
+          <img [src]="arrowDefaultSrc" [alt]="arrowActiveAlt"  class="registration__form-input-select__default-arrow" tabindex="0"/>
+          <img [src]="arrowActiveSrc" [alt]="arrowActiveAlt" class="registration__form-input-select__active-arrow" tabindex="1"/>
+          <div class="registration__form-input-select__options">
+            <span *ngFor="let user of availableUsers" (mousedown)="onUserClick(user)">{{user.name}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="registration__form-input-group">
+        <div class="registration__form-input-label">
+          <span>Введите пароль</span>
+        </div>
+        <input type="password" name="password" class="registration__form-input" formControlName="password">
+      </div>
+      <button type="submit" class="registration__form-submit-button">Войти</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

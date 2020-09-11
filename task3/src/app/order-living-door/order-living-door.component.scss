@@ -1,0 +1,192 @@
+.container{
+  width: 255px;
+  height: 500px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.header{
+  display: flex;
+  padding-right: 30px;
+}
+
+.header>p{
+  width: 225.32px;
+  height: 12px;
+  font-family: RFTone-Semibold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #CBA576;
+}
+
+.header>img{
+  width: 30px;
+  height: 9px;
+}
+
+.title{
+  padding-bottom: 15px;
+}
+
+.title h1{
+  width: 225.32px;
+  height: 34.37px;
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.title p{
+  width: 225.32px;
+  height: 11.75px;
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  color: #000000;
+  padding-top: 5px;
+}
+
+hr{
+  width: 225px;
+  height: 0px;
+  left: 15px;
+  top: 95px;
+  border: 0.7px solid #C7A477;
+}
+
+.size{
+  padding-bottom: 12px;
+}
+
+.size__list ul:first-child{
+}
+
+.size__list ul:last-child{
+}
+.trim p{
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  color: #000000
+}
+
+h2{
+  width: 225.32px;
+  height: 13px;
+  font-family: RFTone-Regular;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #C7A477;
+  padding-top: 8px;
+}
+
+ul{
+  width: 50%;
+  white-space: nowrap;
+}
+
+.package__lists, .furniture__list, .size__list{
+  width: 100%;
+  display: flex;
+
+}
+
+.package>h2, .furniture>h2{
+}
+
+.furniture__list ul{
+}
+
+.furniture__list ul:last-child{
+  margin-left: 25px;
+}
+
+li{
+  list-style-type: none;
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.price{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.price__inscription{
+  width: 100%;
+  display: flex;
+}
+
+.price__inscription > p{
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+  width: 50%;
+}
+
+.price__inscription p:first-child{
+  text-decoration: line-through;
+}
+
+.price__inscription p:last-child{
+  color: #ff0000;
+}
+
+.price__annotation{
+  font-family: Minion Pro;
+  font-size: 8px;
+  line-height: 9px;
+  color: #000000;
+
+  font-style: italic;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.maker{
+  width: 50%;
+}
+
+.maker p{
+  font-family: Minion Pro;
+  font-size: 7px;
+  line-height: 8px;
+  color: #000000;
+}
+
+.delivery-install{
+  width: 28%;
+}
+
+.delivery-install p{
+  font-family: Minion Pro;
+  font-size: 8px;
+  line-height: 8px;
+  color: #000000;
+}
+
+.price__inscription__added-cost{
+  text-decoration: none!important;
+  color: #000000!important;
+}

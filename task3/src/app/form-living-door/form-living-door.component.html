@@ -1,0 +1,271 @@
+<body>
+<header class="title">
+
+  <div class="title__address-descr">
+    <p class="title__subscr">адрес салона</p>
+    <p class="title__address">пр-т Дзержинского, 122</p>
+    <div class="title__exit">
+      <p>выход</p>
+      <img [src]="smallArrow" alt="small arrow">
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="title__name">
+    <h1 class="title__name__descr">Форма ценника для межкомантной двери</h1>
+  </div>
+  <div class="common-description">
+    <ul class="common-description__title">
+      <li class="name-of-forms">Серия</li>
+      <li class="name-of-forms">Название</li>
+      <li class="name-of-forms">Указатель</li>
+      <li class="name-of-forms">Материал</li>
+      <li class="name-of-forms">Цвет</li>
+    </ul>
+    <ul class="common-description__forms">
+      <li>
+        <label>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="text">
+        </label>
+      </li>
+      <li>
+        <div class="common-description__indicator-images">
+          <img [src]="leftArrow" alt="arrow">
+          <img [src]="door" alt="door">
+          <img [src]="rightArrow" alt="arrow">
+        </div>
+      </li>
+      <li>
+        <label>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </label>
+      </li>
+      <li>
+        <form>
+          <label>
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </label>
+          <label>
+            <input type="text">
+          </label>
+        </form>
+      </li>
+    </ul>
+  </div>
+
+  <div class="size">
+    <p class="forms-title">Размеры</p>
+    <div class="size__forms">
+      <ul class="size__forms__title">
+        <li class="name-of-forms size__high__title">Высота</li>
+        <li class="name-of-forms size__inside-text">Внутри</li>
+      </ul>
+      <ul class="size__forms__input">
+        <li>
+          <label class="size__high__input">
+            <input class="size__form__input" type="text">
+            <span>мм</span>
+          </label>
+        </li>
+        <li>
+          <label class="size__forms__input-inside">
+            <input type="text"><span>мм</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="package">
+    <p class="forms-title">Комплектация</p>
+    <div class="package__content">
+      <ul class="package__content__title">
+        <li class="name-of-forms package__charachteristic__item1">Дверное полотно</li>
+        <li class="name-of-forms package__charachteristic__with-select-box">Коробка</li>
+        <li class="name-of-forms">Наличники</li>
+        <li class="name-of-forms package__charachteristic-circuit-text">Декоративные элементы</li>
+      </ul>
+      <ul class="package__content__forms">
+        <li>
+          <label class="package__charachteristic__canvas">
+            <input type="text" placeholder="98" class="package__charachteristic__input">
+            <span>мм</span>
+          </label>
+        </li>
+        <li>
+          <label class="name-of-forms package__content__forms__select">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <input type="text">
+            <span>комплект</span>
+          </label>
+        </li>
+        <li>
+          <label class="package__content__forms__select">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <input type="text">
+            <span>шт. </span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="text" placeholder="4 шт."
+                   class="package__charachteristic__input">
+            <span>мм</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="sign-for-adding">
+      <img [src]="addingSign" alt="add">
+    </div>
+  </div>
+
+  <div class="price">
+    <p class="forms-title">Цена и стоимость</p>
+    <div class="price__content">
+      <ul class="price__content__title">
+        <li class="name-of-forms">Цена</li>
+        <li>
+          <label class="price__content__title-check">
+            <input type="checkbox" value="sale">
+          </label>
+          <span class="name-of-forms">со скидкой</span>
+        </li>
+      </ul>
+      <ul class="price__content__form">
+        <li>
+          <label>
+            <input type="text">
+            <span class="name-of-forms">р.</span>
+          </label>
+        </li>
+        <li>
+          <label class="price__with-sale__cost">
+            <input type="text">
+            <span class="name-of-forms price__with-sale__cost-text "> р.</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="price__without-delivery">
+      <label>
+        <input type="checkbox">
+        <p>стоимость двери без учёта доставки и монтажа</p>
+      </label>
+    </div>
+
+  </div>
+
+  <div class="furniture">
+    <p class="forms-title">Замки и фурнитура</p>
+    <div class="furniture__content">
+      <ul class="furniture__content__title">
+        <li class="name-of-forms">Ручка</li>
+        <li class="name-of-forms">Петля</li>
+        <li class="name-of-forms">Замок</li>
+        <li class="name-of-forms">Система</li>
+      </ul>
+      <ul class="furniture__content__form">
+        <li>
+          <label class="furniture__form__handle">
+            <input type="text">
+            <input type="text" class="furniture__form-count">
+            <span> шт.</span>
+          </label>
+        </li>
+        <li>
+          <label class="furniture__form__loop">
+            <input type="text">
+            <input type="text" class="furniture__form-count">
+            <span> шт.</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="text">
+            <input class="furniture__form-count" type="text">
+            <span> шт.</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="text">
+            <input class="furniture__form-count" type="text">
+            <span> шт</span>
+          </label>
+        </li>
+      </ul>
+
+    </div>
+    <div class="sign-for-adding">
+      <img [src]="addingSign" alt="add">
+    </div>
+  </div>
+
+  <div class="price">
+    <p class="forms-title">Цена и стоимость</p>
+    <div class="price__content">
+      <ul class="price__content__title">
+        <li class="name-of-forms">Цена</li>
+        <li>
+          <label class="price__content__title-check">
+            <input type="checkbox" value="sale">
+          </label>
+          <span class="name-of-forms">со скидкой</span>
+        </li>
+      </ul>
+      <ul class="price__content__form">
+        <li>
+          <label>
+            <input type="text">
+            <span class="name-of-forms">р.</span>
+          </label>
+        </li>
+        <li>
+          <label class="price__with-sale__cost">
+            <input type="text">
+            <span class="name-of-forms price__with-sale__cost-text "> р.</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="price__without-delivery">
+      <label>
+        <input type="checkbox">
+        <p>стоимость двери без учёта доставки и монтажа</p>
+      </label>
+    </div>
+    <div class="create-file">
+      <button type="submit">Создать файл для печати</button>
+    </div>
+  </div>
+
+</div>
+<footer></footer>
+</body>

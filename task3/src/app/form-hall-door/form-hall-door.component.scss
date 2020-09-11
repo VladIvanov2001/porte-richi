@@ -1,0 +1,451 @@
+footer,body {
+  background: #E5E5E5;
+}
+
+
+footer{
+  height: 129px;
+}
+
+.title {
+  max-width: 1310px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title__name__descr {
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 54px;
+  color: #000000;
+  text-align: center;
+}
+
+.title__subscr {
+  font-family: RFTone-Semibold;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #B1B1B1;
+}
+
+.title__address {
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.title__exit {
+  display: flex;
+  cursor: pointer;
+}
+
+.title__exit p {
+  font-family: Minion Pro;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #CBA576;
+}
+
+.title__exit img {
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 862px;
+  margin: 0 110px auto;
+}
+
+ul li{
+  content: '';
+  list-style-type: none;
+}
+
+.common-description, .trim, .construction, .furniture-and-locks, .price {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.common-description{
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+
+.common-description__title{
+  margin-left: 22px;
+}
+
+.common-description__title li{
+  padding-top: 34px;
+}
+
+.common-description__forms{
+  margin-left: 110px;
+  margin-bottom: 37px;
+}
+
+.common-description__forms li{
+  padding-top: 29px;
+}
+
+.common-description__forms li:first-child label input{
+  width: 246px;
+  height: 45px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.common-description__forms li:nth-child(2) label:not(:first-child){
+  margin-top: 2px;
+  padding-left: 24px;
+}
+
+.common-description__forms li:nth-child(3) label:not(:first-child){
+  margin-top: 2px;
+  padding-left: 24px;
+}
+
+.common-description__forms li span{
+  margin-left: 15px;
+}
+
+
+.common-description__name, .common-description__purpose, .common-description__indicator {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+}
+
+.common-description__purpose p {
+  margin-left: 2px;
+}
+
+.common-description__name input {
+  width: 246px;
+  height: 45px;
+  position: relative;
+  top: 10px;
+  left: 130px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.name-of-forms {
+  font-family: Minion Pro;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.common-description__equipment label {
+  display: flex;
+  width: 25%;
+  padding-left: 8px;
+}
+
+.common-description__indicator-images {
+  display: flex;
+}
+
+.common-description__indicator p {
+  position: relative;
+  right: 43px;
+}
+
+.trim {
+  margin-bottom: 18px;
+}
+
+.trim div{
+  display: flex;
+  flex-direction: row;
+}
+
+.trim div input {
+  width: 510px;
+  height: 72px;
+  left: 264px;
+  top: 81px;
+
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.trim__title{
+  margin-left: 23px;
+  margin-bottom:45px ;
+}
+.trim__title li{
+  padding-top: 68px;
+}
+
+.trim__form li{
+  padding-top: 29px;
+}
+
+.trim__form{
+  margin-left: 90px;
+}
+
+.forms-title {
+  font-family: RFTone-Bold;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #CBA576;
+  margin-left: 26px;
+  margin-top: 33px;
+}
+
+.trim__form-text-inside {
+  position: relative;
+  right: 36px;
+}
+
+.trim__form-text-outside {
+  position: relative;
+  right: 28px;
+}
+
+.construction {
+  margin-bottom: 16px;
+}
+
+.construction span{
+  margin-left: 15px;
+}
+
+.construction div{
+  padding-top: 38px;
+  display: flex;
+  flex-direction: row;
+}
+
+.construction__charachteristic {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.construction__charachteristic__input {
+  width: 57px;
+  height: 45px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.construction__charachteristic__item1 {
+  position: relative;
+  right: 25px;
+}
+
+.construction__charachteristic__form {
+  position: relative;
+  right: 17px;
+
+}
+
+.construction__charachteristic__circuit {
+  margin-right: 6px;
+}
+
+.construction__charachteristic-circuit-text {
+  position: relative;
+  right: 10px;
+}
+
+.construction__forms li:nth-child(5) select, .construction__forms li:nth-child(6) select,
+.construction__forms li:nth-child(7) select{
+  margin-top: 5px;
+  width: 264px;
+  height: 45px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.construction__titles{
+  margin-left: 23px;
+}
+
+.construction__titles li:not(:first-child){
+  padding-top: 40px;
+}
+
+.construction__forms{
+  margin-left: 18px;
+}
+.construction__forms li:not(:first-child){
+  padding-top: 17px;
+}
+
+
+.construction__charachteristic__with-select {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.construction__charachteristic__with-select__text-compressor {
+  margin-right: 64px;
+}
+
+.construction__charachteristic__with-select p {
+  position: relative;
+  right: 15px;
+}
+
+.sign-for-adding {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.furniture-and-locks {
+  margin-bottom: 16px;
+}
+
+.furniture-and-locks__form {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 39px;
+}
+
+.furniture-and-locks__form label {
+  position: relative;
+  left: 60px;
+}
+
+.furniture-and-locks input {
+  width: 335px;
+  height: 45px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.furniture-and-locks div{
+  display: flex;
+  flex-direction: row;
+}
+
+.furniture-and-locks__title{
+  margin-left: 23px;
+}
+
+.furniture-and-locks__forms{
+  margin-left: 110px;
+}
+
+.furniture-and-locks__forms li{
+  padding-top: 25px;
+}
+
+.furniture-and-locks__title li{
+  padding-top: 42px;
+}
+.price__content{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.price__content__title{
+  margin-left: 23px;
+  margin-bottom: 54px;
+}
+
+.price__content__title li:nth-child(2){
+  display: flex;
+}
+
+.price__content__form{
+  margin-left: 110px;
+}
+
+.price__content__form li{
+  padding-top: 25px;
+}
+
+.price__content__title li {
+  padding-top: 38px;
+}
+
+.price__content__form li label input{
+  width: 70px;
+  height: 45px;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.price__content__title-check input{
+  background: #FFFFFF;
+  border: 1px solid #9D9DA1;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 26px;
+  height: 27px;
+}
+
+.create-file {
+  margin-top: 63px;
+  margin-left: 22px;
+  margin-bottom: 72px;
+}
+
+.create-file button {
+  width: 438px;
+  height: 81px;
+  background: #CBA576;
+}
+
+.price span{
+  margin-left: 15px;
+}
+
+.price__without-delivery{
+  margin-left: 23px;
+}
+
+.price__without-delivery label {
+  display: flex;
+  align-items: center;
+}
+
+.price__without-delivery > label > input[type="checkbox"] {
+  width: 26px;
+  height: 27px;
+  background: #CBA576;
+  border: 1px solid #CBA576;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.price__without-delivery > label > p {
+  font-family: Minion Pro;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 22px;
+}
+

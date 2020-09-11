@@ -1,0 +1,16 @@
+{
+"shopList": [
+  {
+    "username": "dzer",
+    "name": "пр-т Дзержинского, 122"
+  },
+  {
+    "username": "olesh",
+    "name": "ул. Олешего 10"
+  },
+  {
+    "username": "trum",
+    "name": "ул. Кальварийская, 7Б"
+  }
+]
+}

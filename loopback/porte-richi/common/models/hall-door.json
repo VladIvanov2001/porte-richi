@@ -1,0 +1,56 @@
+{
+  "name": "hallDoor",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "equipment": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "priceWithDiscount": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trims": {
+      "type": "hasMany",
+      "model": "trim",
+      "foreignKey": ""
+    },
+    "constructions": {
+      "type": "hasMany",
+      "model": "construction",
+      "foreignKey": ""
+    },
+    "furniture": {
+      "type": "hasMany",
+      "model": "furniture",
+      "foreignKey": ""
+    },
+    "rightShops": {
+      "type": "hasMany",
+      "model": "rightShop",
+      "foreignKey": "",
+      "through": "ShopPriceTags"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
